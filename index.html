@@ -52,8 +52,8 @@ body{font-family:'Cormorant Garamond',serif;background:var(--navy3);color:var(--
 @keyframes mandalaRot{from{transform:translateX(-50%) rotate(0)}to{transform:translateX(-50%) rotate(360deg)}}
 
 /* Top mandala (static, ornamental) */
-.hero-mandala-top{display:block;width:min(68vw,620px);pointer-events:none;z-index:2;
-  max-height:40vh;overflow:visible;margin:0 auto clamp(-20px,-4vh,-10px)}
+.hero-mandala-top{display:block;width:min(62vw,560px);pointer-events:none;z-index:2;
+  max-height:30vh;overflow:visible;margin:0 auto -14px}
 
 .hero-vig{position:absolute;inset:0;z-index:3;
   background:radial-gradient(ellipse at 50% 50%,transparent 38%,rgba(14,14,46,.52) 100%);pointer-events:none}
@@ -65,7 +65,7 @@ body{font-family:'Cormorant Garamond',serif;background:var(--navy3);color:var(--
 .torana{position:absolute;top:0;left:0;right:0;z-index:4;pointer-events:none}
 
 .hero-content{position:relative;z-index:5;display:flex;flex-direction:column;align-items:center;
-  padding:clamp(70px,10vh,110px) clamp(24px,6vw,80px) clamp(70px,8vh,100px);max-width:720px}
+  padding:clamp(8px,1.2vh,16px) clamp(24px,6vw,80px) clamp(50px,6vh,70px);max-width:720px;gap:0}
 
 [data-a]{opacity:0;animation:enter 1.1s ease both}
 [data-a="1"]{animation-delay:.3s}[data-a="2"]{animation-delay:.6s}[data-a="3"]{animation-delay:.9s}
@@ -74,27 +74,27 @@ body{font-family:'Cormorant Garamond',serif;background:var(--navy3);color:var(--
 
 .h-cordially{font-family:'Jost',sans-serif;font-weight:300;font-size:clamp(11px,1.4vw,15px);
   letter-spacing:.62em;text-transform:uppercase;color:rgba(255,255,255,.95);
-  margin-bottom:clamp(8px,1.5vh,18px)}
+  margin-bottom:4px}
 .h-names{font-family:'Great Vibes',cursive;font-size:clamp(68px,12vw,136px);
   color:var(--gold2);line-height:1;text-shadow:0 0 50px rgba(212,160,23,.35),0 2px 20px rgba(0,0,0,.45);
-  margin-bottom:clamp(10px,2vh,24px)}
+  margin-bottom:4px}
 
 /* Gold ornament */
-.orn{display:flex;align-items:center;gap:14px;margin-bottom:clamp(10px,2vh,22px);width:clamp(160px,28vw,280px)}
+.orn{display:flex;align-items:center;gap:14px;margin-bottom:6px;width:clamp(160px,28vw,280px)}
 .orn .ol{flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(212,160,23,.7))}
 .orn .or{flex:1;height:1px;background:linear-gradient(to left,transparent,rgba(212,160,23,.7))}
 .orn .od{width:6px;height:6px;background:var(--gold);transform:rotate(45deg);flex-shrink:0}
 .orn .oc{font-size:17px;color:var(--gold2);flex-shrink:0}
 
 .h-dear-pre{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;
-  font-size:clamp(18px,2.4vw,28px);color:rgba(255,255,255,.92);display:block;margin-bottom:4px}
+  font-size:clamp(18px,2.4vw,28px);color:rgba(255,255,255,.92);display:block;margin-bottom:2px}
 .h-dear-name{font-family:'Cinzel Decorative',serif;font-weight:700;
   font-size:clamp(32px,6vw,68px);color:var(--gold3);display:block;letter-spacing:.06em;line-height:1.1;
-  text-shadow:0 0 32px rgba(255,217,102,.3);margin-bottom:clamp(10px,2vh,26px)}
+  text-shadow:0 0 32px rgba(255,217,102,.3);margin-bottom:10px}
 
 .h-together{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;
   font-size:clamp(17px,2.2vw,26px);color:rgba(255,255,255,.90);
-  margin-bottom:clamp(14px,2.5vh,30px);max-width:480px;line-height:1.75}
+  margin-bottom:10px;max-width:480px;line-height:1.65}
 
 .cta{display:inline-flex;align-items:center;gap:13px;border:1px solid rgba(212,160,23,.65);
   background:rgba(24,24,74,.5);backdrop-filter:blur(10px);color:var(--gold3);
@@ -292,7 +292,7 @@ body{font-family:'Cormorant Garamond',serif;background:var(--navy3);color:var(--
 /* ═══════ MOBILE RESPONSIVE ═══════ */
 @media(max-width:640px){
   .hero-photo{opacity:.30}
-  .hero-content{max-width:100%;padding:clamp(60px,9vh,90px) 22px clamp(40px,6vh,60px)}
+  .hero-content{max-width:100%;padding:6px 22px clamp(28px,4vh,44px)}
   .fam-grid{grid-template-columns:1fr;gap:20px}
   .fam-mid{padding-top:0;flex-direction:row;justify-content:center;gap:16px}
   .imp-g{grid-template-columns:1fr;gap:14px}
@@ -311,7 +311,7 @@ body{font-family:'Cormorant Garamond',serif;background:var(--navy3);color:var(--
   .sldr{height:clamp(220px,60vw,380px)}
   .orn{width:clamp(120px,44vw,200px);margin-bottom:14px}
   .hero-mandala-bg{width:120vw;opacity:.06}
-  .hero-mandala-top{width:82vw;max-height:28vh}
+  .hero-mandala-top{width:76vw;max-height:22vh;margin:0 auto -10px}
   .imp-c{padding:16px 14px}
   .day-bd{padding:14px 16px}
   .day-hd{padding:12px 16px}
@@ -328,7 +328,7 @@ body{font-family:'Cormorant Garamond',serif;background:var(--navy3);color:var(--
   .h-cordially{margin-bottom:8px}
   .h-names{font-size:clamp(48px,14vw,68px)}
   .hero-content{padding-top:clamp(170px,30vh,210px)}
-  .hero-mandala-top{width:88vw;max-height:26vh}
+  .hero-mandala-top{width:80vw;max-height:20vh;margin:0 auto -8px}
   .sh{font-size:clamp(24px,7.5vw,36px)}
   .cal-dates{flex-direction:column;align-items:center}
   .cd-box{min-width:clamp(64px,18vw,78px)}
@@ -475,7 +475,7 @@ body{font-family:'Cormorant Garamond',serif;background:var(--navy3);color:var(--
   border-radius: 50%;
   background: rgba(14,14,46,.65);
   backdrop-filter: blur(4px);
-  margin: 0 auto clamp(10px, 1.8vh, 18px);
+  margin: 0 auto 6px;
   text-shadow: 0 0 16px rgba(212,160,23,.6);
   box-shadow: 0 0 0 4px rgba(212,160,23,.12);
 }
@@ -677,7 +677,7 @@ body{font-family:'Cormorant Garamond',serif;background:var(--navy3);color:var(--
 
   <div class="hero-content">
 <!-- Top mandala static -->
-  <svg class="hero-mandala-top" viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg">
+  <svg class="hero-mandala-top" viewBox="0 60 760 380" xmlns="http://www.w3.org/2000/svg">
     <defs><radialGradient id="mg" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#D4A017" stop-opacity="1"/><stop offset="100%" stop-color="#D4A017" stop-opacity="0.3"/></radialGradient></defs>
     <g transform="translate(380,0)" fill="none" stroke="url(#mg)" stroke-width="0.9">
       <circle cx="0" cy="380" r="320"/><circle cx="0" cy="380" r="272"/><circle cx="0" cy="380" r="224"/><circle cx="0" cy="380" r="176"/><circle cx="0" cy="380" r="128"/><circle cx="0" cy="380" r="82"/><circle cx="0" cy="380" r="48"/>
