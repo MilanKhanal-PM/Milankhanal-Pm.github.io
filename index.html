@@ -291,27 +291,29 @@ body{font-family:'Cormorant Garamond',serif;background:var(--navy3);color:var(--
 
 /* ═══════ MOBILE RESPONSIVE ═══════ */
 @media(max-width:640px){
+  #hero{justify-content:flex-start;align-items:center}
   .hero-photo{opacity:.30}
-  .hero-content{max-width:100%;padding:6px 22px clamp(28px,4vh,44px)}
+  .hero-content{max-width:100%;padding:52px 20px 32px}
   .fam-grid{grid-template-columns:1fr;gap:20px}
   .fam-mid{padding-top:0;flex-direction:row;justify-content:center;gap:16px}
   .imp-g{grid-template-columns:1fr;gap:14px}
   .scene{min-height:auto;padding:clamp(60px,8vh,80px) 18px}
-  .wm-om,.wm-mandala{display:none}
+  .wm-om,.wm-mandala,.scroll-dn{display:none}
   .cd-row{gap:10px}
   .cd-box{min-width:clamp(72px,20vw,90px);padding:14px 8px 12px}
   .cd-n{font-size:clamp(36px,12vw,54px)}
   .day-title{font-size:clamp(22px,6.5vw,36px)}
   .sh{font-size:clamp(28px,8vw,48px)}
-  .h-names{font-size:clamp(52px,14vw,78px)}
-  .h-dear-name{font-size:clamp(28px,9vw,52px)}
+  .h-names{font-size:clamp(46px,13vw,68px);margin-bottom:2px}
+  .h-dear-name{font-size:clamp(26px,8vw,46px);margin-bottom:8px}
   .guest-name-disp{font-size:clamp(30px,9vw,56px)}
+  .h-together{margin-bottom:8px;font-size:clamp(15px,4.2vw,22px)}
   .cl-names{font-size:clamp(54px,14vw,88px)}
   .fam-amp{font-size:clamp(42px,12vw,66px)}
   .sldr{height:clamp(220px,60vw,380px)}
-  .orn{width:clamp(120px,44vw,200px);margin-bottom:14px}
+  .orn{width:clamp(110px,40vw,180px);margin-bottom:4px}
   .hero-mandala-bg{width:120vw;opacity:.06}
-  .hero-mandala-top{width:76vw;max-height:22vh;margin:0 auto -10px}
+  .hero-mandala-top{width:72vw;max-height:20vh;margin:0 auto -12px}
   .imp-c{padding:16px 14px}
   .day-bd{padding:14px 16px}
   .day-hd{padding:12px 16px}
@@ -325,7 +327,7 @@ body{font-family:'Cormorant Garamond',serif;background:var(--navy3);color:var(--
   .sldr-cap{font-size:9px;letter-spacing:.3em;white-space:normal;text-align:center;width:90%;left:5%;transform:none}
 }
 @media(max-width:400px){
-  .h-cordially{margin-bottom:8px}
+  .h-cordially{margin-bottom:3px}
   .h-names{font-size:clamp(48px,14vw,68px)}
   .hero-content{padding-top:clamp(170px,30vh,210px)}
   .hero-mandala-top{width:80vw;max-height:20vh;margin:0 auto -8px}
